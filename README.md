@@ -41,9 +41,4 @@ This is a file sharing application built using the MERN (MongoDB, Express.js, Re
    npm run dev
    ```
    
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
 
