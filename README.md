@@ -1,5 +1,5 @@
 
-# Eazzyshare
+# File Sharing Application
 
 This is a file sharing application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. Users can upload, download, and manage files securely.
 
