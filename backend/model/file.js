@@ -15,5 +15,18 @@ const fileSchema = new mongoose.Schema({
         default: 0
     }
 })
+const userSchema = new mongoose.Schema({
+    username: {
+      type: String,
+      required: true,
+      unique: true
+    },
+    password: {
+      type: String,
+      required: true
+    }
+  });
+
 const File=mongoose.model('File',fileSchema)
-export default File
+const User=mongoose.model('User',userSchema)
+export {File,User}
