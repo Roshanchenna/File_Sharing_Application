@@ -1,5 +1,5 @@
 // image-controller.js
-import File from "../model/file.js";
+import {File} from "../model/file.js";
 import dotenv from 'dotenv';
 dotenv.config();
 export const uploadImage = async (request, response) => {

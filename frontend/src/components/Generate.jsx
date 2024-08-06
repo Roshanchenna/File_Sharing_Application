@@ -3,6 +3,7 @@ import { uploadFile } from "../services/api";
 import img from "../../assests/Logo.jpg";
 import { FaCloudUploadAlt, FaSignOutAlt } from "react-icons/fa";
 import { MdOutlineContentCopy } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 const Generate = () => {
   const fileInput = useRef(null);
@@ -11,7 +12,7 @@ const Generate = () => {
   const [uploading, setUploading] = useState(false);
   const [copyStatus, setCopyStatus] = useState('');
   const [previousUrls, setPreviousUrls] = useState([]);
-
+  const navigate = useNavigate();
   const handleFileChange = (e) => {
     setFile(e.target.files[0]);
   };
@@ -28,8 +29,9 @@ const Generate = () => {
   };
 
   const handleLogout = () => {
-    // Implement logout logic here
     console.log("Logout clicked");
+    localStorage.removeItem('token');
+    navigate('/');
   };
 
   useEffect(() => {

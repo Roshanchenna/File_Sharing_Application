@@ -81,7 +81,7 @@ const Login = () => {
         </form>
         <p className="text-center text-gray-400 text-sm">
           Don't have an account? 
-          <a className="font-bold text-blue-500 hover:text-blue-400 ml-1" href="#">Sign up</a>
+          <a className="font-bold text-blue-500 hover:text-blue-400 ml-1" onClick={() => navigate('/signup')}>Sign up</a>
         </p>
       </div>
     </div>
