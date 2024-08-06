@@ -7,8 +7,6 @@ This is a file sharing application built using the MERN (MongoDB, Express.js, Re
 
 - File uploading: Users can upload files to the server.
 - File downloading: Users can download files from the server.
-- File management: Users can view, rename, delete files they uploaded.
-- Access control: Files are only accessible to authorized users.
 
 ## Technologies Used
 
@@ -18,7 +16,6 @@ This is a file sharing application built using the MERN (MongoDB, Express.js, Re
 - Node.js: JavaScript runtime for building the backend server.
 - JWT (JSON Web Tokens): Used for user authentication.
 - Multer: Middleware for handling file uploads.
-- Axios: HTTP client for making requests to the backend from the frontend.
 
 ## Setup Instructions
 
